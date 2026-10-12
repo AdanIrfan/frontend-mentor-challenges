@@ -11,86 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link href="styles.css" rel="stylesheet" />
     <title>Frontend Mentor | QR code component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      @font-face {
-        font-family: Outfit;
-        src: url("fonts/Outfit-VariableFont_wght.ttf") format("truetype");
-        font-weight: 100 900;
-        font-style: normal;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background-color: hsl(212, 45%, 89%);
-        font-size: 15px;
-        font-family: "Outfit", "Times New Roman", Times, serif;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .main-container {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #container {
-        background-color: hsl(0, 0%, 100%);
-        max-width: 350px;
-        padding: 16px;
-        border-radius: 20px;
-        padding-bottom: 1px;
-        text-align: center;
-        box-shadow: 0 8px 24px hsl(218, 44%, 22%, 0.08);
-      }
-
-      #container img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-
-      #container p,
-      #container h1 {
-        padding: 0px 28px;
-      }
-
-      #container h1 {
-        font-size: 1.3rem;
-        color: hsl(218, 44%, 22%);
-        font-weight: 700;
-        margin: 24px 0 16px;
-      }
-
-      #container p {
-        font-size: 1rem;
-        color: hsl(216, 15%, 48%);
-        font-weight: 500;
-        margin-bottom: 32px;
-      }
-      .attribution {
-        padding: 12px;
-        font-size: 0.6875rem;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main class="main-container">
-      <div id="container">
+      <div class="qr-card">
         <img
           src="images/image-qr-code.png"
           alt="QR code to visit Frontend Mentor"
@@ -105,7 +31,7 @@
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/AdanIrfan">Adan Irfan</a>.
     </footer>
   </body>
 </html>
