@@ -1,22 +1,24 @@
 @font-face {
-  font-family: figtree;
+  font-family: Figtree;
   src: url("assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
     format("truetype");
-  font-weight: 800;
+  font-weight: 300 900;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: figtreeItalic;
+  font-family: Figtree;
   src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
-  font-weight: 500;
+  font-weight: 300 900;
   font-type: italic;
 }
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "figtree", cursive;
+  font-family: "Figtree", cursive;
   margin: 0px;
   min-height: 100vh;
   background-color: hsl(47, 88%, 63%);
@@ -50,15 +52,17 @@ body {
   margin: 16px 0px;
   border-radius: 10px;
   background-color: hsl(47, 88%, 63%);
+  font-weight: 800;
 }
 
 .blog-card p {
-  font-family: "figtreeItalic";
+  font-weight: 500;
   margin: 0px 0px 8px;
 }
 
 .blog-card h1 {
   font-size: 1.3rem;
+  font-weight: 800;
 }
 
 .blog-card h1 + p {
@@ -79,5 +83,5 @@ body {
 }
 
 .profile p {
-  font-family: "figtree", cursive;
+  font-weight: 800;
 }
