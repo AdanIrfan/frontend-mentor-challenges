@@ -36,25 +36,25 @@ body {
   box-shadow: 0 8px 24px hsl(218, 44%, 22%, 0.08);
 }
 
-#container img {
+.qr-card img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-#container p,
-#container h1 {
+.qr-card p,
+.qr-card h1 {
   padding: 0px 28px;
 }
 
-#container h1 {
+.qr-card h1 {
   font-size: 1.3rem;
   color: hsl(218, 44%, 22%);
   font-weight: 700;
   margin: 24px 0 16px;
 }
 
-#container p {
+.qr-card p {
   font-size: 1rem;
   color: hsl(216, 15%, 48%);
   font-weight: 500;
