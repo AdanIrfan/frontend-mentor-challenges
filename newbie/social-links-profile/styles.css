@@ -1,0 +1,106 @@
+@font-face {
+  font-family: InterVariable;
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  font-family: "InterVariable", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  padding: 6px;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 0px 22px 22px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+}
+
+.profile-info {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info img {
+  border-radius: 50%;
+  max-width: 40%;
+}
+
+.profile-info h1 {
+  font-size: 1.5rem;
+  margin: 24px 0px 8px;
+  font-weight: 700;
+}
+
+.profile-info p {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: none;
+  text-align: center;
+  padding: 24px 0px 0px;
+}
+
+ul li {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 20%);
+  font-weight: 600;
+}
+
+ul li a {
+  display: block;
+  padding: 16px 96px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+ul li a:hover,
+ul li a:focus-visible {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
