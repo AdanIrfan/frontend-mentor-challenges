@@ -1,24 +1,41 @@
+:root {
+  --color-background: hsl(0, 0%, 8%);
+  --color-card: hsl(0, 0%, 12%);
+  --color-button: hsl(0, 0%, 20%);
+  --color-text: hsl(0, 0%, 100%);
+  --color-accent: hsl(75, 94%, 57%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
 @font-face {
-  font-family: InterVariable;
-  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
-    format("truetype");
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
   font-weight: 300 900;
   font-style: normal;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
 }
 
 body {
-  font-family: "InterVariable", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: hsl(0, 0%, 8%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-size: 14px;
   padding: 6px;
 }
@@ -35,14 +52,14 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 350px;
-  padding: 0px 22px 22px;
-  background-color: hsl(0, 0%, 12%);
-  border-radius: 10px;
+  max-width: 21.875rem;
+  padding: 0 1.375rem 1.375rem;
+  background-color: var(--color-card);
+  border-radius: 0.625rem;
 }
 
 .profile-info {
-  padding: 32px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,34 +72,37 @@ body {
 
 .profile-info h1 {
   font-size: 1.5rem;
-  margin: 24px 0px 8px;
+  margin: 1.5rem 0 0.5rem;
   font-weight: 700;
 }
 
 .profile-info p {
-  color: hsl(75, 94%, 57%);
+  color: var(--color-accent);
   font-weight: 600;
 }
 
 ul {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
+  width: 100%;
   list-style-type: none;
   text-align: center;
-  padding: 24px 0px 0px;
+  padding: 1.5rem 0 0;
 }
 
 ul li {
   border-radius: 10px;
-  background-color: hsl(0, 0%, 20%);
+  background-color: var(--color-button);
   font-weight: 600;
+  width: 100%;
 }
 
 ul li a {
   display: block;
-  padding: 16px 96px;
-  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.625rem;
   text-decoration: none;
   color: inherit;
   transition:
@@ -92,8 +112,8 @@ ul li a {
 
 ul li a:hover,
 ul li a:focus-visible {
-  background-color: hsl(75, 94%, 57%);
-  color: hsl(0, 0%, 8%);
+  background-color: var(--color-accent);
+  color: var(--color-background);
 }
 
 .attribution {
