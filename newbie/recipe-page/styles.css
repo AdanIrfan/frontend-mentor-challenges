@@ -99,19 +99,22 @@ hr {
 }
 
 table {
-  padding: 1rem;
-  border-spacing: 5rem 0;
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
 }
 
 th {
+  padding: 0.8rem;
   color: var(--fontcolor-grey);
   font-weight: 600;
   text-align: start;
+  border-bottom: 1px solid grey;
 }
 
 td {
   color: var(--fontcolor-brown);
-  text-align: end;
+  border-bottom: 1px solid grey;
 }
 .attribution {
   font-size: 0.6875rem;
