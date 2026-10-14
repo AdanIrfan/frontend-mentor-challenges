@@ -1,0 +1,122 @@
+:root {
+  --background-color: hsl(30, 54%, 90%);
+  --card-color: hsl(0, 0%, 100%);
+  --fontcolor-grey: hsl(30, 10%, 34%);
+  --container-heading: hsl(332, 51%, 32%);
+  --container-background: hsl(330, 100%, 98%);
+  --fontcolor-brown: hsl(14, 45%, 36%);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: young-serif;
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "young-serif", sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+p,
+li {
+  font-family: "Outfit", "Times New Roman", Times, serif;
+  color: var(--fontcolor-grey);
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+}
+
+.recipe-card {
+  max-width: 50%;
+  padding: 1.8rem;
+  background-color: var(--card-color);
+  border-radius: 0.675rem;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 0.675rem;
+}
+
+.recipe-card h1 {
+  font-size: 2.6rem;
+  padding-bottom: 1rem;
+}
+
+.time-container {
+  background-color: var(--container-background);
+  margin: 2rem 0;
+  padding: 1.5rem 3rem;
+}
+
+.time-container ul,
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+.time-container h1 {
+  font-size: 1.3rem;
+  color: var(--container-heading);
+}
+
+.time-container ~ h1 {
+  font-size: 2.2rem;
+  color: var(--fontcolor-brown);
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+table {
+  padding: 1rem;
+  border-spacing: 5rem 0;
+}
+
+th {
+  color: var(--fontcolor-grey);
+  font-weight: 600;
+  text-align: start;
+}
+
+td {
+  color: var(--fontcolor-brown);
+  text-align: end;
+}
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
