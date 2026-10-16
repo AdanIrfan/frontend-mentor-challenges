@@ -1,4 +1,120 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 900;
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url("./assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  --background-color: hsl(30, 38%, 92%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(212, 21%, 14%);
+  --accent-colorgrey: hsl(228, 12%, 48%);
+  --accent-colorgreen: hsl(158, 36%, 37%);
+  --darkgreen-color: hsl(158, 42%, 18%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.product-card {
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+
+.product-card > img {
+  width: 100%;
+  min-width: 22rem;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+
+.category {
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.product-card h1 {
+  color: var(--black-color);
+  font-family: "Fraunces", "Times New Roman", Times, serif;
+}
+
+.product-card p {
+  font-weight: 500;
+  color: var(--accent-colorgrey);
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.2;
+}
+
+.price .new-price {
+  color: var(--accent-colorgreen);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+.price .old-price {
+  color: var(--accent-colorgrey);
+}
+
+button {
+  background-color: var(--accent-colorgreen);
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.625rem;
+  color: var(--white-color);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+/* button img {
+  ;
+} */
+
+.description {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
 .attribution {
+  padding: 0.5rem;
   font-size: 0.6875rem;
   text-align: center;
 }
