@@ -28,7 +28,7 @@ header {
 
 .brand-header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 .img-hero-mobile {
@@ -198,7 +198,7 @@ footer {
 .footerTextContainer {
   position: absolute;
   z-index: -999999;
-  top: 8em;
+  top: 10em;
   width: 100%;
   height: 20em;
   background-image:
