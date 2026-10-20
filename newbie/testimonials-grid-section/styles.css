@@ -13,17 +13,17 @@
 }
 
 :root {
-  --White: hsl(0, 0%, 100%);
-  --Grey100: hsl(214, 17%, 92%);
-  --Grey200: hsl(0, 0%, 81%);
-  --Grey400: hsl(224, 10%, 45%);
-  --Grey500: hsl(217, 19%, 35%);
-  --Darkblue: hsl(219, 29%, 14%);
-  --Black: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+  --grey100: hsl(214, 17%, 92%);
+  --grey200: hsl(0, 0%, 81%);
+  --grey400: hsl(224, 10%, 45%);
+  --grey500: hsl(217, 19%, 35%);
+  --darkblue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
 
-  --Purple50: hsl(260, 100%, 95%);
-  --Purple300: hsl(264, 82%, 80%);
-  --Purple500: hsl(263, 55%, 52%);
+  --purple50: hsl(260, 100%, 95%);
+  --purple300: hsl(264, 82%, 80%);
+  --purple500: hsl(263, 55%, 52%);
 }
 
 * {
@@ -35,8 +35,8 @@ body {
   font-weight: 500;
   margin: 0;
   height: 100vh;
-  background-color: var(--Grey200);
-  color: var(--White);
+  background-color: var(--grey200);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +57,16 @@ body {
   gap: 0.875rem;
   padding: 2rem;
   border-radius: 0.625rem;
-  box-shadow: 14px 14px 32px 4px var(--Black);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  line-height: 1.25;
+  letter-spacing: 0.025rem;
+}
+
+.card p {
+  line-height: 1.4;
 }
 
 .profile {
@@ -72,84 +81,88 @@ body {
   width: 45px;
   height: 45px;
 }
-/* .profile-info{
-    display: flex;
-    flex-direction: column;
-} */
 
 h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
   font-weight: 600;
+}
+
+h2 {
+  font-size: 0.8125rem;
+  line-height: 1.2;
 }
 
 p,
 h2,
-h3 {
+h3,
+blockquote {
   margin: 0;
 }
 
-.card--danial {
-  background-color: var(--Purple500);
+.card--daniel {
+  background-color: var(--purple500);
 }
 
-.card--danial h3 {
-  color: var(--Purple50);
+.card--daniel h3 {
+  color: var(--purple50);
 }
 
-.card--danial h2,
-.card--danial p {
-  color: var(--Purple300);
+.card--daniel h2,
+.card--daniel p {
+  color: var(--purple300);
 }
 
 .card--jonathan {
-  background-color: var(--Grey500);
+  background-color: var(--grey500);
 }
 
 .card--jonathan h3 {
-  color: var(--White);
+  color: var(--white);
 }
 
 .card--jonathan h2,
 .card--jonathan p {
-  color: var(--Grey200);
+  color: var(--grey200);
 }
 
 .card--jeanette {
-  background-color: var(--Grey100);
+  background-color: var(--grey100);
 }
 
 .card--jeanette h3 {
-  color: var(--Darkblue);
+  color: var(--darkblue);
 }
 
 .card--jeanette h2,
 .card--jeanette p {
-  color: var(--Grey500);
+  color: var(--grey500);
 }
 
 .card--patrick {
-  background-color: var(--Darkblue);
+  background-color: var(--darkblue);
 }
 
 .card--patrick h3 {
-  color: var(--Grey100);
+  color: var(--grey100);
 }
 
 .card--patrick h2,
 .card--patrick p {
-  color: var(--Grey200);
+  color: var(--grey200);
 }
 
 .card--kira {
-  background-color: var(--Grey100);
+  background-color: var(--grey100);
 }
 
 .card--kira h3 {
-  color: var(--Darkblue);
+  color: var(--darkblue);
 }
 
 .card--kira h2,
 .card--kira p {
-  color: var(--Grey400);
+  color: var(--grey400);
 }
 
 .attribution {
@@ -162,15 +175,20 @@ h3 {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 700px) {
+.visually-hidden {
+  display: none;
+}
+
+@media (min-width: 1100px) {
   .container {
-    width: 60%;
-    grid-template-rows: repeat(2, minmax(250px, 300px));
+    width: 90%;
+    max-width: 1100px;
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-content: center;
   }
 
-  .card--danial {
+  .card--daniel {
     grid-row: 1;
     grid-column: 1/3;
   }
