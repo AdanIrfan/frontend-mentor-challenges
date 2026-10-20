@@ -11,7 +11,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: (3, auto);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas: "header" "main" "footer";
   overflow: hidden;
 }
@@ -73,7 +73,7 @@ header {
   background-color: #71c0d4;
   border-radius: 2em;
   border-width: 0px;
-  line-height: 1, 8em;
+  line-height: 1.8em;
   font-weight: bold;
   font-size: 0.8em;
   padding: 1em 2em;
@@ -94,7 +94,7 @@ header {
   background-color: #b18bdd;
   border-radius: 2em;
   border-width: 0px;
-  line-height: 1, 8em;
+  line-height: 1.8em;
   font-weight: bold;
   font-size: 0.8em;
   padding: 1em 2em;
